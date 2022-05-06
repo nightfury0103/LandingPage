@@ -1,0 +1,14 @@
+ [data-aos='zoom-in-out'] {
+    transform: scale(1.2, 1.2);
+    &.aos-animate {
+        transform: scale(1, 1);
+    }
+}
+
+[data-aos='shade'] {
+    background-color: white;
+    &.aos-animate {
+        background-color: transparent;
+        transition: ease-in-out;
+    }
+}

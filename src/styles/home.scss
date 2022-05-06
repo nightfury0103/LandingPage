@@ -1,0 +1,29 @@
+.home-logo {
+    position: absolute;
+    width: 428px;
+    height: 428px;
+    margin-left: calc(50% - 214px);
+    margin-top: 255px;
+}
+
+.home-btn {
+    position: absolute;
+    margin-top: 825px;
+    margin-left: calc(50% - 75px);
+}
+
+.home-btn button {
+    
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 150px;
+    height: 58px;
+    color: white;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}

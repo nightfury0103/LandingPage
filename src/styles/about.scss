@@ -1,0 +1,86 @@
+.about-logo {
+    position: absolute;
+    margin: 59px 0 0 77px;
+    display: flex;
+    align-items: center;
+}
+
+.about-logo img {
+    width: 55.19px;
+    height: 55.19px;
+}
+
+.about-logo-link {
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 2.670588254928589px;
+    text-align: left;
+    color: #5571FF;
+    margin-left: 13.15px;
+}
+
+.about-logo-dap {
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: 2.670588254928589px;
+    text-align: left;
+    color: #5571FF;
+
+}
+
+.about-contact-btn button {
+    float: right;
+    margin: 48px 72px 0 0;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 150px;
+    height: 58px;
+    color: white;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.about-content {
+    position: absolute;
+    margin: 463px 0 0 110px;
+    width: 1478px;
+    height: 191px;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+.about-projects-btn {
+    position: absolute;
+    width: 150px;
+    height: 58px;
+    margin-top: 775px;
+    margin-left: 783px;
+}
+.about-projects-btn button {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}

@@ -1,0 +1,76 @@
+.projects-root {
+    position: relative;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.projects-logo {
+    position: absolute;
+    margin: 32px 0 0 75px;
+    display: flex;
+    align-items: center;
+}
+
+.projects-logo img {
+    width: 81px;
+    height: 83px;
+}
+
+.projects-contact-btn button {
+    float: right;
+    margin: 48px 69px 0 0;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 150px;
+    height: 58px;
+    color: white;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.projects-text {
+    position: absolute;
+    width: 765px;
+    height: 131px;
+    left: 87px;
+    top: 186px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 32px;
+    text-align: left;
+    
+    color: #FFFFFF;
+    
+}
+
+@media (max-width: 765px) {
+    .projects-text {
+        width: calc(100% - 87px);
+    }
+}
+
+.projects-wrapper {
+    position: relative;
+    width: 84%;
+    margin: 0 auto;
+    top: 600px;
+}
+
+@media (max-width: 1280px) {
+    .projects-wrapper {
+        width: 90%;
+    }
+}
+
+.projects-content {
+    width: 100%;
+    position: absolute;
+}
