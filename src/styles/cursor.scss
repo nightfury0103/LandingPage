@@ -10,10 +10,9 @@
 }
 
 .cursor-dot {
-    width: 20px;
-    height: 20px;
-    border: 20px solid #ee1171 ;
-    background-color: #f7b3db;
-    box-shadow: 0px 0px 300px 300px rgba(#85425f, 0.7);
-    filter: blur(5px);
+    width: 7px;
+    height: 7px;
+    background-color: #f7c3e1;
+    box-shadow: 0px 0px 100px 100px rgba(#8a1010, 0.3);
+    //filter: blur(5px);
 }

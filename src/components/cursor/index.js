@@ -18,9 +18,9 @@ export default function Cursor({ children }) {
 
   const toggleCursorVisibility = () => {
     if (cursorVisible.current) {
-      dot.current.style.opacity = 1;
+      dot.current.style.display = "block";
     } else {
-      dot.current.style.opacity = 0;
+      dot.current.style.display = "none";
     }
   };
 
@@ -95,7 +95,7 @@ export default function Cursor({ children }) {
   return (
     <>
       <div ref={dot} className="cursor-dot"></div>
-      <main>{children}</main>
+      <>{children}</>
     </>
   );
 }

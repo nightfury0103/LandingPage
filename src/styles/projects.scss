@@ -6,14 +6,36 @@
 
 .projects-logo {
     position: absolute;
-    margin: 32px 0 0 75px;
+    margin: 59px 0 0 77px;
     display: flex;
     align-items: center;
 }
 
 .projects-logo img {
-    width: 81px;
-    height: 83px;
+    width: 55.19px;
+    height: 55.19px;
+}
+
+.projects-logo-link {
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 2.670588254928589px;
+    text-align: left;
+    color: #5571FF;
+    margin-left: 13.15px;
+}
+
+.projects-logo-dap {
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: 2.670588254928589px;
+    text-align: left;
+    color: #5571FF;
+
 }
 
 .projects-contact-btn button {

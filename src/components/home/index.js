@@ -1,8 +1,10 @@
 import "../../styles/home.scss";
-import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { CarouselContext } from "../Carousel/Context";
 
 export default function Home() {
-  let navigate = useNavigate();
+  const projects = [1, 2, 3, 4];
+  const context = useContext(CarouselContext);
   return (
     <div class="home-root">
       <div class="home-logo">
@@ -11,7 +13,7 @@ export default function Home() {
       <div class="home-btn">
         <button
           onClick={() => {
-            navigate("/About");
+            context.setNextSlide("FORWARD");
           }}
         >
           Hello

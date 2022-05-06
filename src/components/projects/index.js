@@ -7,7 +7,9 @@ export default function Home() {
   return (
     <div class="projects-root">
       <div class="projects-logo">
-        <img src="../images/ProjectLogo.png" />
+        <img src="../images/BigLogo.png" />
+        <span class="projects-logo-link">Link</span>
+        <span class="projects-logo-dap">Dap</span>
       </div>
       <div class="projects-contact-btn">
         <button>Contact</button>

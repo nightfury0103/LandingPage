@@ -1,10 +1,7 @@
 import "./style.css";
-import Home from "./components/home";
-import About from "./components/about";
-import Projects from "./components/projects";
-import Cursor from "./components/cursor";
-import Layout from "./components/layout";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Cursor from "./components/Cursor";
+import Layout from "./components/Layout";
+import Slider from "./components/Slider";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -22,13 +19,7 @@ export default function App() {
   return (
     <Layout>
       <Cursor>
-        <BrowserRouter>
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/About" element={<About />} />
-            <Route exact path="/Projects" element={<Projects />} />
-          </Routes>
-        </BrowserRouter>
+        <Slider />
       </Cursor>
     </Layout>
   );
