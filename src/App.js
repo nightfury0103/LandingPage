@@ -21,13 +21,15 @@ AOS.init({
 export default function App() {
   return (
     <Layout>
-      <BrowserRouter>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/About" element={<About />} />
-          <Route exact path="/Projects" element={<Projects />} />
-        </Routes>
-      </BrowserRouter>
+      <Cursor>
+        <BrowserRouter>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/About" element={<About />} />
+            <Route exact path="/Projects" element={<Projects />} />
+          </Routes>
+        </BrowserRouter>
+      </Cursor>
     </Layout>
   );
 }
