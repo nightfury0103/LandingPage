@@ -3,7 +3,12 @@
     margin: 0 auto;
 }
 
+.about-root.none {
+    display: none;
+}
+
 .about-header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 50px 70px
@@ -11,13 +16,24 @@
 
 
 .about-logo {
+    width: 428px;
+    height: 428px;
+    margin-left: calc(50% - 214px);
+    margin-top: 205px;
+}
+
+.about-logo.on {
     display: flex;
     align-items: center;
+    margin: 0;
+    width: 55.19px;
+    height: 55.19px;
+    transition: all 1s;
 }
 
 .about-logo img {
-    width: 55.19px;
-    height: 55.19px;
+    width: 100%;
+    height: 100%;
 }
 
 .about-logo-link {

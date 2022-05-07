@@ -5,18 +5,13 @@ export default function Project(props) {
   return (
     <div class="project">
       <a class="project-link" href="#">
-        <div
-          class="project-card"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-mirror="true"
-        >
+        <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
           <div class="project-card-inner">
             <img src={"../projects/" + props.name + ".jpg"} />
           </div>
         </div>
         <div
-          class="project-detail aos-item"
+          class="project-detail"
           data-aos="zoom-in-out"
           data-aos-duration="1000"
         >

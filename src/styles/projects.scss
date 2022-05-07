@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+.projects-root.none {
+    display: none;
+}
+
 .projects-header {
     display: flex;
     justify-content: space-between;
