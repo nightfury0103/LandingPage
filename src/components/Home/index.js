@@ -1,10 +1,10 @@
 import "../../styles/home.scss";
 import { useContext } from "react";
-import { CarouselContext } from "../Carousel/Context";
+import { CarouselContext } from "../Scroll/Carousel/Context";
 
 export default function Home() {
-  const projects = [1, 2, 3, 4];
   const context = useContext(CarouselContext);
+
   return (
     <div class="home-root">
       <div class="home-logo">

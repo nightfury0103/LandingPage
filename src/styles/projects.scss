@@ -1,12 +1,16 @@
 .projects-root {
-    position: relative;
     max-width: 1500px;
     margin: 0 auto;
 }
 
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 70px
+}
+
+
 .projects-logo {
-    position: absolute;
-    margin: 59px 0 0 77px;
     display: flex;
     align-items: center;
 }
@@ -38,14 +42,17 @@
 
 }
 
+.projects-contact-btn {
+    width: 150px;
+    height: 58px;
+}
+
 .projects-contact-btn button {
-    float: right;
-    margin: 48px 69px 0 0;
     background: transparent;
     border: 1px solid white;
     border-radius: 5px;
-    width: 150px;
-    height: 58px;
+    width: 100%;
+    height: 100%;
     color: white;
     font-family: Roboto;
     font-size: 24px;
@@ -56,11 +63,10 @@
 }
 
 .projects-text {
-    position: absolute;
+
     width: 765px;
     height: 131px;
-    left: 87px;
-    top: 186px;
+    margin: 75px 0 0 70px;
     
     font-family: 'Roboto';
     font-style: normal;
@@ -73,9 +79,9 @@
     
 }
 
-@media (max-width: 765px) {
+@media (max-width: 865px) {
     .projects-text {
-        width: calc(100% - 87px);
+        width: calc(100% - 100px);
     }
 }
 
@@ -83,16 +89,11 @@
     position: relative;
     width: 84%;
     margin: 0 auto;
-    top: 600px;
+    margin-top: 200px;
 }
 
 @media (max-width: 1280px) {
     .projects-wrapper {
         width: 90%;
     }
-}
-
-.projects-content {
-    width: 100%;
-    position: absolute;
 }

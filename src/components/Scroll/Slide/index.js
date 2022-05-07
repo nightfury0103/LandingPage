@@ -16,6 +16,7 @@ const Slide = ({ children, index, currentIndex, nextIndex, prevIndex }) => {
   const style = {
     zIndex: isCurrent ? 1 : -1,
     opacity: isCurrent ? 1 : 0,
+    //display: isCurrent ? "block" : "none",
   };
 
   return (

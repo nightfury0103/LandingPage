@@ -3,10 +3,14 @@
     margin: 0 auto;
 }
 
+.about-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 70px
+}
+
 
 .about-logo {
-    position: absolute;
-    margin: 59px 0 0 77px;
     display: flex;
     align-items: center;
 }
@@ -38,14 +42,17 @@
 
 }
 
+.about-contact-btn {
+    width: 150px;
+    height: 58px;
+}
+
 .about-contact-btn button {
-    float: right;
-    margin: 48px 72px 0 0;
     background: transparent;
     border: 1px solid white;
     border-radius: 5px;
-    width: 150px;
-    height: 58px;
+    width: 100%;
+    height: 100%;
     color: white;
     font-family: Roboto;
     font-size: 24px;
@@ -56,9 +63,8 @@
 }
 
 .about-content {
-    position: absolute;
     width: 1478px;
-    height: 191px;
+    min-height: 191px;
     font-family: Roboto;
     font-size: 40px;
     font-weight: 500;
@@ -66,26 +72,25 @@
     letter-spacing: 0em;
     text-align: center;
     color: white;
-    top: 50%;
-    left: 50%;
+    margin-top: calc(50vh - 158px);
+    margin-left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center
 }
 
 @media (max-width: 1478px) {
     .about-content {
-        width: calc(100% - 87px);
+        width: calc(100% - 80px);
     }
 }
 
 .about-projects-btn {
-    position: absolute;
     width: 150px;
     height: 58px;
-    margin-top: 150px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 121px auto;
 }
+
 .about-projects-btn button {
     background: transparent;
     border: 1px solid white;
