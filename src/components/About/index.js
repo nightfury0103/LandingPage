@@ -1,28 +1,34 @@
 import "../../styles/about.scss";
+import "animate.css";
 import { useContext, useEffect, useState } from "react";
-import { CarouselContext } from "../Scroll/Carousel/Context";
+import { SliderContext } from "../Slider/SliderContext";
 
-export default function Home() {
-  const context = useContext(CarouselContext);
+export default function About() {
+  const context = useContext(SliderContext);
 
   const [logoStatus, setLogoStatus] = useState(false);
   const [status, setStatus] = useState(false);
   useEffect(() => {
-    if (context.currentIndex == 1) {
+    if (context.curId == 1) {
       setTimeout(() => {
         setLogoStatus(true);
-      }, 200);
+      }, 100);
+
       setStatus(true);
     } else {
-      setTimeout(() => {
-        setStatus(false);
-      }, 1000);
-      if (context.currentIndex == 0) setLogoStatus(false);
+      setStatus(false);
+      if (context.curId == 0) setLogoStatus(false);
     }
   });
 
   return (
-    <div class={status ? "about-root" : "about-root none"}>
+    <div
+      class={
+        status
+          ? "about-root animate__animated animate__fadeIn"
+          : "about-root none"
+      }
+    >
       <div class="about-header">
         <div class={logoStatus ? "about-logo on" : "about-logo"}>
           <img src="../images/BigLogo.png" />
@@ -41,7 +47,7 @@ export default function Home() {
       <div class="about-projects-btn">
         <button
           onClick={() => {
-            context.setNextSlide("FORWARD");
+            context.toggleId();
           }}
         >
           Projects

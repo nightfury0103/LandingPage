@@ -1,29 +1,33 @@
 import "../../styles/home.scss";
 import { useContext, useState, useEffect } from "react";
-import { CarouselContext } from "../Scroll/Carousel/Context";
+import { SliderContext } from "../Slider/SliderContext";
 
 export default function Home() {
-  const context = useContext(CarouselContext);
+  const context = useContext(SliderContext);
 
   const [status, setStatus] = useState(false);
   useEffect(() => {
-    if (context.currentIndex == 0) {
+    if (context.curId == 0) {
       setStatus(true);
     } else {
-      setTimeout(() => {
-        setStatus(false);
-      }, 1000);
+      setStatus(false);
     }
   });
   return (
-    <div class={status ? "home-root" : "home-root none"}>
+    <div
+      class={
+        status
+          ? "home-root animate__animated animate__fadeIn"
+          : "home-root none"
+      }
+    >
       <div class="home-logo">
         <img src="images/BigLogo.png" />
       </div>
       <div class="home-btn">
         <button
           onClick={() => {
-            context.setNextSlide("FORWARD");
+            context.toggleId();
           }}
         >
           Hello

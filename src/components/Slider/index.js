@@ -1,15 +1,15 @@
 import React from "react";
-import Carousel from "../Scroll/Carousel";
 import Home from "../Home";
 import About from "../About";
 import Projects from "../Projects";
+import { SliderProvider } from "./SliderContext";
 
 const Slider = () => (
-  <Carousel>
+  <SliderProvider>
     <Home />
     <About />
     <Projects />
-  </Carousel>
+  </SliderProvider>
 );
 
 export default Slider;
